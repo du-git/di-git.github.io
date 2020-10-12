@@ -80,9 +80,9 @@ s(i,j-1) +gap
 </figure>
 <h4 id="局部比对算法">局部比对算法</h4>
 <p><span class="math display">\[
-s(0,0) = 0\\\\
-s(0,j) = 0\\\\
-s(i,0) = 0\\\\
+s(0,0) = 0 \\
+s(0,j) = 0 \\\\\
+s(i,0) = 0\\\\\\
 s(i,j) = max\begin{cases}
 0\\
 s(i-1,j-1) + w(i,j)\\
@@ -90,16 +90,10 @@ s(i-1,j) +gap\\
 s(i,j-1) +gap\\
 \end{cases}
 \]</span></p>
-<figure>
-<img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007112334652.png" alt="image-20201007112334652"><figcaption aria-hidden="true">image-20201007112334652</figcaption>
-</figure>
 <p><strong>局部比对要找最高分得指向零的那条线</strong></p>
 <hr>
 <p>比对的网址:</p>
 <p><a href="http://www.ebi.ac.uk/Tools/psa">embl-ebl</a></p>
-<figure>
-<img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007113430229.png" alt="image-20201007113430229"><figcaption aria-hidden="true">image-20201007113430229</figcaption>
-</figure>
 <h2 id="blast搜索">BLAST搜索</h2>
 <p>作用: 主要就是在大量数据库里 搜索出<font color="red"> 相识的序列</font></p>
 <figure>
