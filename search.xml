@@ -121,4 +121,93 @@ s(i,j-1) +gap\\
         <category>生物信息学</category>
       </categories>
   </entry>
+  <entry>
+    <title>蛋白质相关操作</title>
+    <url>/2020/10/13/%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h1 id="蛋白质二级结构">蛋白质二级结构</h1>
+<h2 id="先看懂"><font color="YELLOW">先看懂</font>:　</h2>
+<p>​ <strong>结构对应图</strong></p>
+<p><img src="/2020/10/13/%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/image-20201013141435512.png"></p>
+<table>
+<thead>
+<tr class="header">
+<th>T</th>
+<th style="text-align: center;">E</th>
+<th>G</th>
+<th style="text-align: center;">empty</th>
+<th style="text-align: center;">H</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>turn</td>
+<td style="text-align: center;">beta strand</td>
+<td>3/10- hellx</td>
+<td style="text-align: center;">ono secondary structure</td>
+<td style="text-align: center;">alpha hexllx</td>
+</tr>
+<tr class="even">
+<td>β转角</td>
+<td style="text-align: center;">β折片</td>
+<td>螺旋结构</td>
+<td style="text-align: center;">没有结构</td>
+<td style="text-align: center;">α螺旋</td>
+</tr>
+</tbody>
+</table>
+<h2 id="知道怎么做"><font color="blue">知道怎么做</font><a id="more"></a></h2>
+<h2 id="已知蛋白质二级序列">已知蛋白质二级序列</h2>
+<ul>
+<li><p>登入<a href="https://www.rcsb.org/">PDB</a></p></li>
+<li><p>选择你的蛋白质序列ID</p></li>
+<li><p>选择 sequence</p></li>
+<li><p>点击 view sequence &amp; DSSP image // 这个没有了</p></li>
+<li><p><a href="https://swift.cmbi.umcn.nl/gv/dssp/">DSSP</a> 这个网站下有可以搜索已知序列 web sever</p></li>
+</ul>
+<h3 id="未知蛋白质的二级序列">未知蛋白质的二级序列</h3>
+<ul>
+<li><a href="http://bioinf.cs.ucl.ac.uk/psipred">PSIPRED</a></li>
+<li><a href="http://www.compbio.dundee.ac.uk/www-jpred/">Jpred3</a></li>
+<li><a href="http://www.predictprotein.org/">PREDICTPROTEIN</a></li>
+<li><a href="http://scratch.proteomics.ics.uci.edu/">SSpro</a></li>
+<li><a href="http://zhanglab.ccmb.med.umich.edu/PSSpred/">PSSpred</a></li>
+<li><a href="http://mobyle.pasteur.fr/cgi-bin/portal.py?#forms:predator">PREDATOR</a></li>
+</ul>
+<ol type="1">
+<li>选择上面的任意一个网站<br>
+</li>
+<li>输入序列或上传序列文件</li>
+<li>等待得到对应的文件</li>
+</ol>
+<hr>
+<h1 id="蛋白质三级结构">蛋白质三级结构</h1>
+<ul>
+<li><p>获取数据还是得去<a href="https://www.rcsb.org/">PDB</a></p></li>
+<li><p><strong>输入关键词</strong>或者用<font color="red">高级检索输入序列找相似序列</font></p></li>
+<li><p>关于高级检索可以看看blast 检索</p></li>
+</ul>
+<p><img src="/2020/10/13/%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/image-20201013154144283.png"></p>
+<ul>
+<li>制作可视化蛋白质模型软件
+<ul>
+<li><a href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a> (重点是免费)</li>
+<li>Maestro<br>
+</li>
+<li><a href="https://pymol.org/2/">Pymol</a> (专业 土豪随意)</li>
+</ul></li>
+</ul>
+<hr>
+<h1 id="vmd使用记录">VMD使用记录</h1>
+<ul>
+<li>导入pdb文件.</li>
+<li>就会显示出蛋白质的三级结构</li>
+<li>Graphics -&gt; REpresentations 可以修改3D模型的样式</li>
+<li>Graphics -&gt;Colors 里可以修改颜色</li>
+<li>Graphics-&gt; Labels 修改标签样式</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生物信息学</category>
+      </categories>
+  </entry>
 </search>
