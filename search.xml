@@ -1,125 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>多序列比对</title>
-    <url>/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/</url>
-    <content><![CDATA[<h2 id="序列的相似度">序列的相似度</h2>
-<blockquote>
-<p>具有相识的序列就可能具有 相似的结构——&gt; 相似的功能</p>
-</blockquote>
-<p><font color="red">一致度 </font>： （相同/总数）* 100%</p>
-<p><font color="red">相识度</font> : [(相同+ 相似 ) / 总数] * 100%</p>
-<h2 id="替换矩阵">替换矩阵:</h2>
-<h3 id="dna替换矩阵">DNA替换矩阵<a id="more"></a></h3>
+    <title>hexo随手记</title>
+    <url>/2020/10/16/hexo%E9%9A%8F%E6%89%8B%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="为hexo-添加顶置">为hexo 添加顶置</h1>
 <ol type="1">
-<li><p>等价矩阵：　相同为１　　不同为０</p></li>
-<li><p>转换－颠换矩阵：　一个环：　Ｃ／Ｔ　两个环：　A／Ｇ　相同为１　　不相同为－５　　　</p></li>
-<li><p>Blast矩阵：　字母相同为５　　不相同为－４　　　</p>
-<p>１.　＞为什么是５／－４　因为经验</p></li>
+<li>安装</li>
 </ol>
-<h3 id="蛋白质替换矩阵">蛋白质替换矩阵:</h3>
-<ol type="1">
-<li><p>等价矩阵</p>
-<blockquote>
-<p>一样 相同蛋白质为1 不同为0</p>
-</blockquote></li>
-<li><p>PAM矩阵</p>
-<blockquote>
-<p><font color="red">最常用</font> pam-1 是根据100个氨基酸突变平均发生<font color="bule">1个</font> 的量值</p>
-<p>及 相似度为99% 的用 pam-1 呈现负相关</p>
-</blockquote></li>
-<li><p>BLOSUM矩阵</p>
-<blockquote>
-<p><font color="red"> BLOSUM 62 最为常用</font></p>
-<p>跟 pam矩阵 反着过来 跟 相识度呈现正相关</p>
-</blockquote></li>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>添加top</li>
 </ol>
-<figure>
-<img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007101531728.png" alt="image-20201007101531728"><figcaption aria-hidden="true">image-20201007101531728</figcaption>
-</figure>
-<h2 id="序列比较">序列比较</h2>
-<h3 id="打点比对">打点比对</h3>
-<ol type="1">
-<li><p>两条序列比对</p>
-<blockquote>
-<p>将一条序列横向排列 , 另一条纵向排列 <也可以是相同的序列></也可以是相同的序列></p>
-<p>当 遇到<font color="red"> 相同时 记一个标记</font></p>
-</blockquote></li>
-<li><p>一些打点法网址: <a href="http://myhits.isb-sib.ch/cgi-bin/dotlet">Dotlet</a></p>
-<p><a href="http://arbl.cvmbs.colostate.edu/molkit/dnadot">Dnadot</a></p>
-<p><a href="http://sonnhammer.sbc.su.se/Dotter.html">Dotter</a></p>
-<p><a href="http://emboss.sourceforge.net">Dottup</a></p></li>
-</ol>
-<h3 id="序列比对法">序列比对法</h3>
-<ol type="1">
-<li>需要替换<a href="#替换矩阵">矩阵</a>+ 算法</li>
-</ol>
-<h4 id="全局比对算法">全局比对算法</h4>
-<p><span class="math display">\[
-\begin{cases}s(0,0) = 0   \\
-s(0,j) = gap * j  \\
-s(i,0) =  gap * i \\
-s_{max}(i,j)= \begin{cases}
-s(i-i,j-1)+w(i,j)\\
-s(i-1,j) +gap \\
-s(i,j-1) +gap 
-\end{cases}
-\end{cases}
-\]</span></p>
-<blockquote>
-<p>w( i,j) 是替换矩阵对应的值</p>
-</blockquote>
-<figure>
-<img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007112334652.png" alt="image-20201007112334652"><figcaption aria-hidden="true">image-20201007112334652</figcaption>
-</figure>
-<blockquote>
-<p><font color="red"> 如果箭头☞的是字母 则对应所指方向的为空如果是斜着 就两个保持不变</font></p>
-</blockquote>
-<figure>
-<img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/Users\dyhcu\AppData\Roaming\Typora\typora-user-images\image-20201007111257092.png" alt="image-20201007111257092"><figcaption aria-hidden="true">image-20201007111257092</figcaption>
-</figure>
-<h4 id="局部比对算法">局部比对算法</h4>
-<p><span class="math display">\[
-s(0,0) = 0 \\
-s(0,j) = 0 \\\\\
-s(i,0) = 0\\\\\\
-s(i,j) = max\begin{cases}
-0\\
-s(i-1,j-1) + w(i,j)\\
-s(i-1,j) +gap\\
-s(i,j-1) +gap\\
-\end{cases}
-\]</span></p>
-<p><strong>局部比对要找最高分得指向零的那条线</strong></p>
-<hr>
-<p>比对的网址:</p>
-<p><a href="http://www.ebi.ac.uk/Tools/psa">embl-ebl</a></p>
-<h2 id="blast搜索">BLAST搜索</h2>
-<p>作用: 主要就是在大量数据库里 搜索出<font color="red"> 相识的序列</font></p>
-<figure>
-<img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007143012591.png" alt="image-20201007143012591"><figcaption aria-hidden="true">image-20201007143012591</figcaption>
-</figure>
-<ol type="1">
-<li>blast 找出序列相同的子序列,他们的长度相同,且能形成无空位的序列</li>
-<li>psi-blast (迭代):上blast的基础上进行搜索</li>
-</ol>
-<figure>
-<img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007143248956.png" alt="image-20201007143248956"><figcaption aria-hidden="true">image-20201007143248956</figcaption>
-</figure>
+<p>然后 在文章的front-matter 里添加 <strong>top: true</strong> 即可</p>
 <ol start="3" type="1">
-<li><p>phi-blast (模式识别模式)</p></li>
-<li><p>一些经行blast比对的在线网址:</p>
-<ol type="1">
-<li><a href="http://www.ncbi.nlm.nih.gov/BLAST">USA-NCBI</a></li>
-<li><a href="http://web.expasy.org/blast">Europe-ExPASY</a></li>
-<li><a href="http://www.uniprot.org/blast/">Europe-Uniprot</a></li>
-<li><a href="http://blast.ddbj.nig.ac.jp">Japan-DDBJ</a></li>
-</ol></li>
+<li>修改/添加标签</li>
 </ol>
+<p>给顶置的文件前头添加顶置<font color="blue">两个</font>字标志(当然你也可以随便改)</p>
+<p>位置:　<font color="red">/themes/next/layout/_macro/post.swig </font></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> post.top %&#125;</span><br><span class="line">    &lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;</span><br><span class="line">    &lt;font color=green&gt;置顶&lt;/font&gt;</span><br><span class="line">    &lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>生物信息学</category>
+        <category>随手记</category>
       </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>随手记</tag>
+      </tags>
   </entry>
   <entry>
     <title>蛋白质相关操作</title>
@@ -205,6 +111,118 @@ s(i,j-1) +gap\\
 <li>Graphics -&gt;Colors 里可以修改颜色</li>
 <li>Graphics-&gt; Labels 修改标签样式</li>
 </ul>
+]]></content>
+      <categories>
+        <category>生物信息学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>多序列比对</title>
+    <url>/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/</url>
+    <content><![CDATA[<blockquote>
+<p>具有相识的序列就可能具有 相似的结构——&gt; 相似的功能</p>
+</blockquote>
+<p><font color="red">一致度 </font>： （相同/总数）* 100%</p>
+<p><font color="red">相识度</font> : [(相同+ 相似 ) / 总数] * 100%</p>
+<h2 id="替换矩阵">替换矩阵:</h2>
+<h3 id="dna替换矩阵">DNA替换矩阵<a id="more"></a></h3>
+<ol type="1">
+<li><p>等价矩阵：　相同为１　　不同为０</p></li>
+<li><p>转换－颠换矩阵：　一个环：　Ｃ／Ｔ　两个环：　A／Ｇ　相同为１　　不相同为－５　　　</p></li>
+<li><p>Blast矩阵：　字母相同为５　　不相同为－４　　　</p>
+<p>１.　＞为什么是５／－４　因为经验</p></li>
+</ol>
+<h3 id="蛋白质替换矩阵">蛋白质替换矩阵:</h3>
+<ol type="1">
+<li><p>等价矩阵</p>
+<blockquote>
+<p>一样 相同蛋白质为1 不同为0</p>
+</blockquote></li>
+<li><p>PAM矩阵</p>
+<blockquote>
+<p><font color="red">最常用</font> pam-1 是根据100个氨基酸突变平均发生<font color="bule">1个</font> 的量值</p>
+<p>及 相似度为99% 的用 pam-1 呈现负相关</p>
+</blockquote></li>
+<li><p>BLOSUM矩阵</p>
+<blockquote>
+<p><font color="red"> BLOSUM 62 最为常用</font></p>
+<p>跟 pam矩阵 反着过来 跟 相识度呈现正相关</p>
+</blockquote></li>
+</ol>
+<figure>
+<img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007101531728.png" alt="image-20201007101531728"><figcaption aria-hidden="true">image-20201007101531728</figcaption>
+</figure>
+<h2 id="序列比较">序列比较</h2>
+<h3 id="打点比对">打点比对</h3>
+<ol type="1">
+<li><p>两条序列比对</p>
+<blockquote>
+<p>将一条序列横向排列 , 另一条纵向排列 <也可以是相同的序列></也可以是相同的序列></p>
+<p>当 遇到<font color="red"> 相同时 记一个标记</font></p>
+</blockquote></li>
+<li><p>一些打点法网址: <a href="http://myhits.isb-sib.ch/cgi-bin/dotlet">Dotlet</a></p>
+<p><a href="http://arbl.cvmbs.colostate.edu/molkit/dnadot">Dnadot</a></p>
+<p><a href="http://sonnhammer.sbc.su.se/Dotter.html">Dotter</a></p>
+<p><a href="http://emboss.sourceforge.net">Dottup</a></p></li>
+</ol>
+<h3 id="序列比对法">序列比对法</h3>
+<ol type="1">
+<li>需要替换<a href="#替换矩阵">矩阵</a>+ 算法</li>
+</ol>
+<h4 id="全局比对算法">全局比对算法</h4>
+<p><span class="math display">\[
+\begin{cases}s(0,0) = 0   \\
+s(0,j) = gap * j  \\
+s(i,0) =  gap * i \\
+s_{max}(i,j)= \begin{cases}
+s(i-1,j-1)+w(i,j)\\
+s(i-1,j) +gap \\
+s(i,j-1) +gap 
+\end{cases}
+\end{cases}
+\]</span></p>
+<blockquote>
+<p>w( i,j) 是替换矩阵对应的值</p>
+</blockquote>
+<p><img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007112334652.png"></p>
+<blockquote>
+<p><font color="red"> 如果箭头☞的是字母 则对应所指方向的为空如果是斜着 就两个保持不变</font></p>
+</blockquote>
+<p><img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007111257092.png"></p>
+<h4 id="局部比对算法">局部比对算法</h4>
+<p><span class="math display">\[
+s(0,0) = 0 \\
+s(0,j) = 0 \\\\\
+s(i,0) = 0\\\\\\
+s(i,j) = max\begin{cases}
+0\\
+s(i-1,j-1) + w(i,j)\\
+s(i-1,j) +gap\\
+s(i,j-1) +gap\\
+\end{cases}
+\]</span></p>
+<p><strong>局部比对要找最高分得指向零的那条线</strong></p>
+<hr>
+<p>比对的网址:</p>
+<p><a href="http://www.ebi.ac.uk/Tools/psa">embl-ebl</a></p>
+<h2 id="blast搜索">BLAST搜索</h2>
+<p>作用: 主要就是在大量数据库里 搜索出<font color="red"> 相识的序列</font></p>
+<p><img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007143012591.png"></p>
+<ol type="1">
+<li>blast 找出序列相同的子序列,他们的长度相同,且能形成无空位的序列</li>
+<li>psi-blast (迭代):上blast的基础上进行搜索</li>
+</ol>
+<p><img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007143248956.png"></p>
+<ol start="3" type="1">
+<li><p>phi-blast (模式识别模式)</p></li>
+<li><p>一些经行blast比对的在线网址:</p>
+<ol type="1">
+<li><a href="http://www.ncbi.nlm.nih.gov/BLAST">USA-NCBI</a></li>
+<li><a href="http://web.expasy.org/blast">Europe-ExPASY</a></li>
+<li><a href="http://www.uniprot.org/blast/">Europe-Uniprot</a></li>
+<li><a href="http://blast.ddbj.nig.ac.jp">Japan-DDBJ</a></li>
+</ol></li>
+</ol>
 ]]></content>
       <categories>
         <category>生物信息学</category>
