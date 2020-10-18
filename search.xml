@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>计算方法预测三级结构</title>
+    <url>/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h1 id="what">WHAT ?</h1>
+<p>是利用电脑进行三级结构的预测 <a id="more"></a></p>
+<h1 id="why">WHY?</h1>
+<h2 id="先介绍下用实验预测的方法有d">先介绍下用实验预测的方法有d</h2>
+<ol type="1">
+<li>X射线衍射法</li>
+<li>冷冻电子显微镜技术</li>
+<li>核磁共振法</li>
+<li>等 (因为忘了)</li>
+</ol>
+<h2 id="为什么不用这些方法">为什么不用这些方法?</h2>
+<ol type="1">
+<li>贵</li>
+<li>技术含量高</li>
+<li>用时长</li>
+</ol>
+<h2 id="为什么用电脑预测">为什么用电脑预测?</h2>
+<ol type="1">
+<li>简单一台电脑就能搞定</li>
+<li>预测相识度比较高的结果较为准确</li>
+</ol>
+<h1 id="how">HOW?</h1>
+<h2 id="同源建模法">同源建模法</h2>
+<p>what: 相识的氨基酸序列对应的相应的蛋白质 用已知推未知</p>
+<p>why: 这样的方法简单啊 相识度在30%以上就可以用此方法, 当然相识度低的不适用</p>
+<p>how: 工作流程图</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017100749392.jpg"></p>
+<p>看起来比较复杂</p>
+<p>选个简单点: 用现成的<a href="https://swissmodel.expasy.org/">SWISS-MODEL</a>登入网站输入序列 输入非商业邮箱 ok</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017100816379.jpg"></p>
+<p>注: 有些存在特殊情况. 序列高度一致的情况下,出现结构不相同</p>
+<h2 id="穿线法">穿线法</h2>
+<p>WHAT: 蛋白质的拓扑结构是确定的1393个, 2008到2015年没发生过变化, 用待测蛋白质序列过过这些已知的拓扑结构,能量较低的极可能是待测蛋白质的三级结构</p>
+<p>HOW: 待测蛋白质序列穿过这些已知的拓扑结构</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101041900.jpg"></p>
+<p>不用担心还是在线网站的<a href="https://zhanglab.ccmb.med.umich.edu/I-TASSER/">I-TASSER</a>注册-&gt;输入序列--&gt;点击run I-TASSER 只需等待即可</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101140258.jpg"></p>
+<h2 id="从头计算法">从头计算法</h2>
+<p>how: 蛋白质三维结构---&gt;蛋白质序列--&gt;最低自由能</p>
+<p>理论上来说: 稳定的蛋白质三维结构的自由能是最低的, 那么反过来 通/过序列去找最低的自由能的空间结构 就是待测序列的三维结构</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101304864.jpg"></p>
+<h2 id="综合法">综合法</h2>
+<p>what: 同源+ 穿线法+ 从头计算法</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101418572.jpg"></p>
+<p>这个就不多介绍了</p>
+<h2 id="总结">总结</h2>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101508761.jpg"></p>
+<h1 id="模型质量评估">模型质量评估</h1>
+<p>通过 计算方法获得的模型,必须通过模型质量评估,以确定模型的准确性.</p>
+<p>需要三个平台测定类似才能确定模型的的可靠性.</p>
+<p>通常可以去<a href="https://servicesn.mbi.ucla.edu/SAVES/">SAVEAS</a>常用的有</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101612770.jpg"></p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101628626.jpg"></p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101655509.jpg"></p>
+<h1 id="结构比对">结构比对:</h1>
+<p>WHAT: 对蛋白质三维结构的相似性进行比较</p>
+<p>why?</p>
+<ol type="1">
+<li>可以用与探索蛋白质进化及其同源关系</li>
+<li>改进序列比对的精度</li>
+<li>改进蛋白质结构测序工具</li>
+<li>为蛋白质提供分类依据</li>
+<li>帮助了解蛋白质功能</li>
+</ol>
+<p>how?</p>
+<p>呐, 挺简单的看到这个网站没--&gt;<a href="http://superpose.wishartlab.com/">suuperpose</a> 点进去 然后把两条序列输入进去就OK了</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/du_1602901054.jpg"></p>
+]]></content>
+      <categories>
+        <category>生物信息学</category>
+      </categories>
+      <tags>
+        <tag>生物信息学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo随手记</title>
     <url>/2020/10/16/hexo%E9%9A%8F%E6%89%8B%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="为hexo-添加顶置">为hexo 添加顶置</h1>
@@ -230,83 +308,5 @@ s(i,j-1) +gap\\
       <categories>
         <category>生物信息学</category>
       </categories>
-  </entry>
-  <entry>
-    <title>计算方法预测三级结构</title>
-    <url>/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h1 id="what">WHAT ?</h1>
-<p>是利用电脑进行三级结构的预测 <a id="more"></a></p>
-<h1 id="why">WHY?</h1>
-<h2 id="先介绍下用实验预测的方法有d">先介绍下用实验预测的方法有d</h2>
-<ol type="1">
-<li>X射线衍射法</li>
-<li>冷冻电子显微镜技术</li>
-<li>核磁共振法</li>
-<li>等 (因为忘了)</li>
-</ol>
-<h2 id="为什么不用这些方法">为什么不用这些方法?</h2>
-<ol type="1">
-<li>贵</li>
-<li>技术含量高</li>
-<li>用时长</li>
-</ol>
-<h2 id="为什么用电脑预测">为什么用电脑预测?</h2>
-<ol type="1">
-<li>简单一台电脑就能搞定</li>
-<li>预测相识度比较高的结果较为准确</li>
-</ol>
-<h1 id="how">HOW?</h1>
-<h2 id="同源建模法">同源建模法</h2>
-<p>what: 相识的氨基酸序列对应的相应的蛋白质 用已知推未知</p>
-<p>why: 这样的方法简单啊 相识度在30%以上就可以用此方法, 当然相识度低的不适用</p>
-<p>how: 工作流程图</p>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017100749392.png"></p>
-<p>看起来比较复杂</p>
-<p>选个简单点: 用现成的<a href="https://swissmodel.expasy.org/">SWISS-MODEL</a>登入网站输入序列 输入非商业邮箱 ok</p>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017100816379.png"></p>
-<p>注: 有些存在特殊情况. 序列高度一致的情况下,出现结构不相同</p>
-<h2 id="穿线法">穿线法</h2>
-<p>WHAT: 蛋白质的拓扑结构是确定的1393个, 2008到2015年没发生过变化, 用待测蛋白质序列过过这些已知的拓扑结构,能量较低的极可能是待测蛋白质的三级结构</p>
-<p>HOW: 待测蛋白质序列穿过这些已知的拓扑结构</p>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101041900.png"></p>
-<p>不用担心还是在线网站的<a href="https://zhanglab.ccmb.med.umich.edu/I-TASSER/">I-TASSER</a>注册-&gt;输入序列--&gt;点击run I-TASSER 只需等待即可</p>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101140258.png"></p>
-<h2 id="从头计算法">从头计算法</h2>
-<p>how: 蛋白质三维结构---&gt;蛋白质序列--&gt;最低自由能</p>
-<p>理论上来说: 稳定的蛋白质三维结构的自由能是最低的, 那么反过来 通过序列去找最低的自由能的空间结构 就是待测序列的三维结构</p>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101304864.png"></p>
-<h2 id="综合法">综合法</h2>
-<p>what: 同源+ 穿线法+ 从头计算法</p>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101418572.png"></p>
-<p>这个就不多介绍了</p>
-<h2 id="总结">总结</h2>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101508761.png"></p>
-<h1 id="模型质量评估">模型质量评估</h1>
-<p>通过 计算方法获得的模型,必须通过模型质量评估,以确定模型的准确性.</p>
-<p>需要三个平台测定类似才能确定模型的的可靠性.</p>
-<p>通常可以去<a href="https://servicesn.mbi.ucla.edu/SAVES/">SAVEAS</a>常用的有</p>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101612770.png"></p>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101628626.png"></p>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101655509.png"></p>
-<h1 id="结构比对">结构比对:</h1>
-<p>WHAT: 对蛋白质三维结构的相似性进行比较</p>
-<p>why?</p>
-<ol type="1">
-<li>可以用与探索蛋白质进化及其同源关系</li>
-<li>改进序列比对的精度</li>
-<li>改进蛋白质结构测序工具</li>
-<li>为蛋白质提供分类依据</li>
-<li>帮助了解蛋白质功能</li>
-</ol>
-<p>how?</p>
-<p>呐, 挺简单的看到这个网站没--&gt;<a href="http://superpose.wishartlab.com/">suuperpose</a> 点进去 然后把两条序列输入进去就OK了</p>
-<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101737368.png"></p>
-]]></content>
-      <categories>
-        <category>生物信息学</category>
-      </categories>
-      <tags>
-        <tag>生物信息学</tag>
-      </tags>
   </entry>
 </search>
