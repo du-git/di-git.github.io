@@ -20,21 +20,32 @@
     var CONFIG = {"hostname":"ducute.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="为hexo 添加顶置  安装  12npm uninstall hexo-generator-index --savenpm install hexo-generator-index-pin-top --save  添加top  然后 在文章的front-matter 里添加 top: true 即可  修改&#x2F;添加标签  给顶置的文件前头添加顶置两个字标志(当然你也可以随便">
+  <meta name="description" content="WHAT ? 是利用电脑进行三级结构的预测">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo随手记">
-<meta property="og:url" content="https://ducute.cn/2020/10/16/hexo%E9%9A%8F%E6%89%8B%E8%AE%B0/index.html">
+<meta property="og:title" content="计算方法预测三级结构">
+<meta property="og:url" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="小菜叶">
-<meta property="og:description" content="为hexo 添加顶置  安装  12npm uninstall hexo-generator-index --savenpm install hexo-generator-index-pin-top --save  添加top  然后 在文章的front-matter 里添加 top: true 即可  修改&#x2F;添加标签  给顶置的文件前头添加顶置两个字标志(当然你也可以随便">
+<meta property="og:description" content="WHAT ? 是利用电脑进行三级结构的预测">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-10-16T01:16:51.000Z">
-<meta property="article:modified_time" content="2020-10-16T02:28:58.940Z">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017100749392.png">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017100816379.png">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101041900.png">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101140258.png">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101304864.png">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101418572.png">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101508761.png">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101612770.png">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101628626.png">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101655509.png">
+<meta property="og:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101737368.png">
+<meta property="article:published_time" content="2020-10-17T02:07:08.638Z">
+<meta property="article:modified_time" content="2020-10-18T01:41:36.997Z">
 <meta property="article:author" content="du_cute">
-<meta property="article:tag" content="hexo">
-<meta property="article:tag" content="随手记">
+<meta property="article:tag" content="生物信息学">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017100749392.png">
 
-<link rel="canonical" href="https://ducute.cn/2020/10/16/hexo%E9%9A%8F%E6%89%8B%E8%AE%B0/">
+<link rel="canonical" href="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/">
 
 
 <script id="page-configurations">
@@ -47,7 +58,7 @@
   };
 </script>
 
-  <title>hexo随手记 | 小菜叶</title>
+  <title>计算方法预测三级结构 | 小菜叶</title>
   
 
 
@@ -195,7 +206,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ducute.cn/2020/10/16/hexo%E9%9A%8F%E6%89%8B%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -208,7 +219,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          hexo随手记
+          计算方法预测三级结构
         </h1>
 
         <div class="post-meta">
@@ -218,17 +229,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-10-16 09:16:51 / 修改时间：10:28:58" itemprop="dateCreated datePublished" datetime="2020-10-16T09:16:51+08:00">2020-10-16</time>
+              <time title="创建时间：2020-10-17 10:07:08" itemprop="dateCreated datePublished" datetime="2020-10-17T10:07:08+08:00">2020-10-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-18 09:41:36" itemprop="dateModified" datetime="2020-10-18T09:41:36+08:00">2020-10-18</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9A%8F%E6%89%8B%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">随手记</span></a>
+                  <a href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">生物信息学</span></a>
                 </span>
             </span>
 
@@ -245,7 +262,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>445</span>
+              <span>775</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -264,24 +281,73 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="为hexo-添加顶置">为hexo 添加顶置</h1>
+        <h1 id="what">WHAT ?</h1>
+<p>是利用电脑进行三级结构的预测 <a id="more"></a></p>
+<h1 id="why">WHY?</h1>
+<h2 id="先介绍下用实验预测的方法有d">先介绍下用实验预测的方法有d</h2>
 <ol type="1">
-<li>安装</li>
+<li>X射线衍射法</li>
+<li>冷冻电子显微镜技术</li>
+<li>核磁共振法</li>
+<li>等 (因为忘了)</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
-<ol start="2" type="1">
-<li>添加top</li>
+<h2 id="为什么不用这些方法">为什么不用这些方法?</h2>
+<ol type="1">
+<li>贵</li>
+<li>技术含量高</li>
+<li>用时长</li>
 </ol>
-<p>然后 在文章的front-matter 里添加 <strong>top: true</strong> 即可</p>
-<ol start="3" type="1">
-<li>修改/添加标签</li>
+<h2 id="为什么用电脑预测">为什么用电脑预测?</h2>
+<ol type="1">
+<li>简单一台电脑就能搞定</li>
+<li>预测相识度比较高的结果较为准确</li>
 </ol>
-<p>给顶置的文件前头添加顶置<font color="blue">两个</font>字标志(当然你也可以随便改)</p>
-<p>位置:　<font color="red">/themes/next/layout/_macro/post.swig </font></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> post.top %&#125;</span><br><span class="line">    &lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;</span><br><span class="line">    &lt;font color=green&gt;置顶&lt;/font&gt;</span><br><span class="line">    &lt;span <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="cmame-推送消失问题">CMAME 推送消失问题</h2>
-<p>请在<font color="red">source</font> 里添加个CMAME 这样就可以更新你的库里了</p>
-<p>​</p>
+<h1 id="how">HOW?</h1>
+<h2 id="同源建模法">同源建模法</h2>
+<p>what: 相识的氨基酸序列对应的相应的蛋白质 用已知推未知</p>
+<p>why: 这样的方法简单啊 相识度在30%以上就可以用此方法, 当然相识度低的不适用</p>
+<p>how: 工作流程图</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017100749392.png"></p>
+<p>看起来比较复杂</p>
+<p>选个简单点: 用现成的<a target="_blank" rel="noopener" href="https://swissmodel.expasy.org/">SWISS-MODEL</a>登入网站输入序列 输入非商业邮箱 ok</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017100816379.png"></p>
+<p>注: 有些存在特殊情况. 序列高度一致的情况下,出现结构不相同</p>
+<h2 id="穿线法">穿线法</h2>
+<p>WHAT: 蛋白质的拓扑结构是确定的1393个, 2008到2015年没发生过变化, 用待测蛋白质序列过过这些已知的拓扑结构,能量较低的极可能是待测蛋白质的三级结构</p>
+<p>HOW: 待测蛋白质序列穿过这些已知的拓扑结构</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101041900.png"></p>
+<p>不用担心还是在线网站的<a target="_blank" rel="noopener" href="https://zhanglab.ccmb.med.umich.edu/I-TASSER/">I-TASSER</a>注册-&gt;输入序列--&gt;点击run I-TASSER 只需等待即可</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101140258.png"></p>
+<h2 id="从头计算法">从头计算法</h2>
+<p>how: 蛋白质三维结构---&gt;蛋白质序列--&gt;最低自由能</p>
+<p>理论上来说: 稳定的蛋白质三维结构的自由能是最低的, 那么反过来 通过序列去找最低的自由能的空间结构 就是待测序列的三维结构</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101304864.png"></p>
+<h2 id="综合法">综合法</h2>
+<p>what: 同源+ 穿线法+ 从头计算法</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101418572.png"></p>
+<p>这个就不多介绍了</p>
+<h2 id="总结">总结</h2>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101508761.png"></p>
+<h1 id="模型质量评估">模型质量评估</h1>
+<p>通过 计算方法获得的模型,必须通过模型质量评估,以确定模型的准确性.</p>
+<p>需要三个平台测定类似才能确定模型的的可靠性.</p>
+<p>通常可以去<a target="_blank" rel="noopener" href="https://servicesn.mbi.ucla.edu/SAVES/">SAVEAS</a>常用的有</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101612770.png"></p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101628626.png"></p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101655509.png"></p>
+<h1 id="结构比对">结构比对:</h1>
+<p>WHAT: 对蛋白质三维结构的相似性进行比较</p>
+<p>why?</p>
+<ol type="1">
+<li>可以用与探索蛋白质进化及其同源关系</li>
+<li>改进序列比对的精度</li>
+<li>改进蛋白质结构测序工具</li>
+<li>为蛋白质提供分类依据</li>
+<li>帮助了解蛋白质功能</li>
+</ol>
+<p>how?</p>
+<p>呐, 挺简单的看到这个网站没--&gt;<a target="_blank" rel="noopener" href="http://superpose.wishartlab.com/">suuperpose</a> 点进去 然后把两条序列输入进去就OK了</p>
+<p><img src="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/image-20201017101737368.png"></p>
 
     </div>
 
@@ -297,7 +363,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://ducute.cn/2020/10/16/hexo%E9%9A%8F%E6%89%8B%E8%AE%B0/" title="hexo随手记">https://ducute.cn/2020/10/16/hexo随手记/</a>
+    <a href="https://ducute.cn/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/" title="计算方法预测三级结构">https://ducute.cn/2020/10/17/通过计算得出蛋白质三级结构/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -308,8 +374,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
-              <a href="/tags/%E9%9A%8F%E6%89%8B%E8%AE%B0/" rel="tag"># 随手记</a>
+              <a href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/" rel="tag"># 生物信息学</a>
           </div>
 
         
@@ -318,13 +383,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/10/13/%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/" rel="prev" title="蛋白质相关操作">
-      <i class="fa fa-chevron-left"></i> 蛋白质相关操作
+    <a href="/2020/10/16/hexo%E9%9A%8F%E6%89%8B%E8%AE%B0/" rel="prev" title="hexo随手记">
+      <i class="fa fa-chevron-left"></i> hexo随手记
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/" rel="next" title="计算方法预测三级结构">
-      计算方法预测三级结构 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -383,7 +445,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BAhexo-%E6%B7%BB%E5%8A%A0%E9%A1%B6%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">为hexo 添加顶置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#cmame-%E6%8E%A8%E9%80%81%E6%B6%88%E5%A4%B1%E9%97%AE%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">CMAME 推送消失问题</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#what"><span class="nav-number">1.</span> <span class="nav-text">WHAT ?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#why"><span class="nav-number">2.</span> <span class="nav-text">WHY?</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%88%E4%BB%8B%E7%BB%8D%E4%B8%8B%E7%94%A8%E5%AE%9E%E9%AA%8C%E9%A2%84%E6%B5%8B%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89d"><span class="nav-number">2.1.</span> <span class="nav-text">先介绍下用实验预测的方法有d</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E7%94%A8%E8%BF%99%E4%BA%9B%E6%96%B9%E6%B3%95"><span class="nav-number">2.2.</span> <span class="nav-text">为什么不用这些方法?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8%E7%94%B5%E8%84%91%E9%A2%84%E6%B5%8B"><span class="nav-number">2.3.</span> <span class="nav-text">为什么用电脑预测?</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#how"><span class="nav-number">3.</span> <span class="nav-text">HOW?</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8C%E6%BA%90%E5%BB%BA%E6%A8%A1%E6%B3%95"><span class="nav-number">3.1.</span> <span class="nav-text">同源建模法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A9%BF%E7%BA%BF%E6%B3%95"><span class="nav-number">3.2.</span> <span class="nav-text">穿线法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E5%A4%B4%E8%AE%A1%E7%AE%97%E6%B3%95"><span class="nav-number">3.3.</span> <span class="nav-text">从头计算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%BC%E5%90%88%E6%B3%95"><span class="nav-number">3.4.</span> <span class="nav-text">综合法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">3.5.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E8%B4%A8%E9%87%8F%E8%AF%84%E4%BC%B0"><span class="nav-number">4.</span> <span class="nav-text">模型质量评估</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E6%9E%84%E6%AF%94%E5%AF%B9"><span class="nav-number">5.</span> <span class="nav-text">结构比对:</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -537,59 +599,6 @@
   
 
   
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 
