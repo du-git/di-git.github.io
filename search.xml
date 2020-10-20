@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>分子对接</title>
+    <url>/2020/10/19/%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/</url>
+    <content><![CDATA[<p>分子对接 1. WHAT? 分子对接,就是分子之间的结合,如同太空飞船和太空站结合一样. 主要: 大分子-大分子:蛋白质-蛋白质 大分子-小分子: 蛋白质-小分子化合物</p>
+<ol type="1">
+<li><p>WHY?</p>
+<ol type="1">
+<li><font color="red">通过分子对接,可以简化实验过程</font>. 例如: 蛋白质找一个能与它结合的小分子。小分子量太多了,只是做实验的话需要很长的时间. 先算在找,可以大大的缩短这个过程。</li>
+</ol></li>
+<li><p>HOW?</p>
+<ol type="1">
+<li><p>蛋白质-蛋白质 <a href="http://zdock.umassmed.edu/">ZDOCK</a> <a href="http://vakser.bioinformatics.ku.edu/resources/gramm/grammx">GRAMM-X</a></p></li>
+<li><p>通常可以使用上面的两个在线网站做一做,演示下ZDOCK的用法</p></li>
+</ol>
+<p><img src="/2020/10/19/%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/Users\dyhcu\AppData\Roaming\Typora\typora-user-images\image-20201019150610786.png"></p>
+<figure>
+<img src="/2020/10/19/%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/picture\截图\du_1603091191.png" alt="du_1603091191"><figcaption aria-hidden="true">du_1603091191</figcaption>
+</figure>
+<ol start="2" type="1">
+<li>通过PDBePISA分析下蛋白质相互作用</li>
+</ol></li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>生物信息学</category>
+      </categories>
+      <tags>
+        <tag>生物信息学</tag>
+        <tag>分子对接</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>有趣的小网站</title>
     <url>/2020/10/19/%E6%9C%89%E8%B6%A3%E7%9A%84%E5%B0%8F%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<h1 id="git">git</h1>
 <ol type="1">
 <li><p><a href="https://book.git-scm.com/">git网址</a></p></li>
 <li><p>推荐这个简易版的<a href="https://www.bootcss.com/p/git-guide/">git_</a></p></li>
+</ol>
+<h1 id="学语言交流的">学语言(交流的)</h1>
+<ol type="1">
+<li>小玩具叭 <a href="http://www.duolingo.cn/learn">多领国</a></li>
 </ol>
 ]]></content>
       <categories>
@@ -267,7 +303,7 @@
 </blockquote></li>
 </ol>
 <figure>
-<img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007101531728.png" alt="image-20201007101531728"><figcaption aria-hidden="true">image-20201007101531728</figcaption>
+<img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201007101531728.png" alt="image-20201007101531728"><figcaption aria-hidden="true">image-20201007101531728</figcaption>
 </figure>
 <h2 id="序列比较">序列比较</h2>
 <h3 id="打点比对">打点比对</h3>
@@ -301,11 +337,11 @@ s(i,j-1) +gap
 <blockquote>
 <p>w( i,j) 是替换矩阵对应的值</p>
 </blockquote>
-<p><img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007112334652.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201007112334652.png"></p>
 <blockquote>
 <p><font color="red"> 如果箭头☞的是字母 则对应所指方向的为空如果是斜着 就两个保持不变</font></p>
 </blockquote>
-<p><img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007111257092.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201007111257092.png"></p>
 <h4 id="局部比对算法">局部比对算法</h4>
 <p><span class="math display">\[
 s(0,0) = 0 \\
@@ -324,12 +360,12 @@ s(i,j-1) +gap\\
 <p><a href="http://www.ebi.ac.uk/Tools/psa">embl-ebl</a></p>
 <h2 id="blast搜索">BLAST搜索</h2>
 <p>作用: 主要就是在大量数据库里 搜索出<font color="red"> 相识的序列</font></p>
-<p><img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007143012591.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201007143012591.png"></p>
 <ol type="1">
 <li>blast 找出序列相同的子序列,他们的长度相同,且能形成无空位的序列</li>
 <li>psi-blast (迭代):上blast的基础上进行搜索</li>
 </ol>
-<p><img src="/2020/10/11/%E5%BA%8F%E5%88%97%E7%9B%B8%E4%BC%BC%E6%AF%94%E5%AF%B9/image-20201007143248956.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201007143248956.png"></p>
 <ol start="3" type="1">
 <li><p>phi-blast (模式识别模式)</p></li>
 <li><p>一些经行blast比对的在线网址:</p>
