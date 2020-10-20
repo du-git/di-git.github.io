@@ -1214,7 +1214,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #c41dfa;
+  background: #a8c8ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2724,7 +2724,7 @@ mjx-container + br {
   }
 }
 body {
-  background: url("/images/backgroud.jpg");
+  background: url("https://cdn.jsdelivr.net/gh/ducute/pic-use/img/backgroud.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
