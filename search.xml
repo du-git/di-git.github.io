@@ -1,104 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>有趣的小网站</title>
-    <url>/2020/10/19/%E6%9C%89%E8%B6%A3%E7%9A%84%E5%B0%8F%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<h1 id="git">git</h1>
-<ol type="1">
-<li><p><a href="https://book.git-scm.com/">git网址</a></p></li>
-<li><p>推荐这个简易版的<a href="https://www.bootcss.com/p/git-guide/">git_</a></p></li>
-</ol>
-<h1 id="学语言交流的">学语言(交流的)</h1>
-<ol type="1">
-<li>小玩具叭 <a href="http://www.duolingo.cn/learn">多领国</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>随手记</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算方法预测三级结构</title>
-    <url>/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h1 id="what">WHAT ?</h1>
-<p>是利用电脑进行三级结构的预测 <a id="more"></a></p>
-<h1 id="why">WHY?</h1>
-<h2 id="先介绍下用实验预测的方法有d">先介绍下用实验预测的方法有d</h2>
-<ol type="1">
-<li>X射线衍射法</li>
-<li>冷冻电子显微镜技术</li>
-<li>核磁共振法</li>
-<li>等 (因为忘了)</li>
-</ol>
-<h2 id="为什么不用这些方法">为什么不用这些方法?</h2>
-<ol type="1">
-<li>贵</li>
-<li>技术含量高</li>
-<li>用时长</li>
-</ol>
-<h2 id="为什么用电脑预测">为什么用电脑预测?</h2>
-<ol type="1">
-<li>简单一台电脑就能搞定</li>
-<li>预测相识度比较高的结果较为准确</li>
-</ol>
-<h1 id="how">HOW?</h1>
-<h2 id="同源建模法">同源建模法</h2>
-<p>what: 相识的氨基酸序列对应的相应的蛋白质 用已知推未知</p>
-<p>why: 这样的方法简单啊 相识度在30%以上就可以用此方法, 当然相识度低的不适用</p>
-<p>how: 工作流程图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017100749392.jpg"></p>
-<p>看起来比较复杂</p>
-<p>选个简单点: 用现成的<a href="https://swissmodel.expasy.org/">SWISS-MODEL</a>登入网站输入序列 输入非商业邮箱 ok</p>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101041900.jpg"></p>
-<p>注: 有些存在特殊情况. 序列高度一致的情况下,出现结构不相同</p>
-<h2 id="穿线法">穿线法</h2>
-<p>WHAT: 蛋白质的拓扑结构是确定的1393个, 2008到2015年没发生过变化, 用待测蛋白质序列过过这些已知的拓扑结构,能量较低的极可能是待测蛋白质的三级结构</p>
-<p>HOW: 待测蛋白质序列穿过这些已知的拓扑结构</p>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101041900.jpg"></p>
-<p>不用担心还是在线网站的<a href="https://zhanglab.ccmb.med.umich.edu/I-TASSER/">I-TASSER</a>注册-&gt;输入序列--&gt;点击run I-TASSER 只需等待即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101140258.jpg"></p>
-<h2 id="从头计算法">从头计算法</h2>
-<p>how: 蛋白质三维结构---&gt;蛋白质序列--&gt;最低自由能</p>
-<p>理论上来说: 稳定的蛋白质三维结构的自由能是最低的, 那么反过来 通/过序列去找最低的自由能的空间结构 就是待测序列的三维结构</p>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101304864.jpg"></p>
-<h2 id="综合法">综合法</h2>
-<p>what: 同源+ 穿线法+ 从头计算法</p>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101418572.jpg"></p>
-<p>这个就不多介绍了</p>
-<h2 id="总结">总结</h2>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101508761.jpg"></p>
-<h1 id="模型质量评估">模型质量评估</h1>
-<p>通过 计算方法获得的模型,必须通过模型质量评估,以确定模型的准确性.</p>
-<p>需要三个平台测定类似才能确定模型的的可靠性.</p>
-<p>通常可以去<a href="https://servicesn.mbi.ucla.edu/SAVES/">SAVEAS</a>常用的有</p>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101612770.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101628626.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101655509.jpg"></p>
-<h1 id="结构比对">结构比对:</h1>
-<p>WHAT: 对蛋白质三维结构的相似性进行比较</p>
-<p>why?</p>
-<ol type="1">
-<li>可以用与探索蛋白质进化及其同源关系</li>
-<li>改进序列比对的精度</li>
-<li>改进蛋白质结构测序工具</li>
-<li>为蛋白质提供分类依据</li>
-<li>帮助了解蛋白质功能</li>
-</ol>
-<p>how?</p>
-<p>呐, 挺简单的看到这个网站没--&gt;<a href="http://superpose.wishartlab.com/">suuperpose</a> 点进去 然后把两条序列输入进去就OK了</p>
-<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/du_1602901054.jpg"></p>
-]]></content>
-      <categories>
-        <category>生物信息学</category>
-      </categories>
-      <tags>
-        <tag>生物信息学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo随手记</title>
     <url>/2020/10/16/hexo%E9%9A%8F%E6%89%8B%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="为hexo-添加顶置">为hexo 添加顶置</h1>
@@ -153,93 +55,24 @@
       </tags>
   </entry>
   <entry>
-    <title>蛋白质相关操作</title>
-    <url>/2020/10/13/%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<h1 id="蛋白质二级结构">蛋白质二级结构</h1>
-<h2 id="先看懂"><font color="YELLOW">先看懂</font>:　</h2>
-<p>​ <strong>结构对应图</strong></p>
-<p><img src="/2020/10/13/%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/image-20201013141435512.png"></p>
-<table>
-<thead>
-<tr class="header">
-<th>T</th>
-<th style="text-align: center;">E</th>
-<th>G</th>
-<th style="text-align: center;">empty</th>
-<th style="text-align: center;">H</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>turn</td>
-<td style="text-align: center;">beta strand</td>
-<td>3/10- hellx</td>
-<td style="text-align: center;">ono secondary structure</td>
-<td style="text-align: center;">alpha hexllx</td>
-</tr>
-<tr class="even">
-<td>β转角</td>
-<td style="text-align: center;">β折片</td>
-<td>螺旋结构</td>
-<td style="text-align: center;">没有结构</td>
-<td style="text-align: center;">α螺旋</td>
-</tr>
-</tbody>
-</table>
-<h2 id="知道怎么做"><font color="blue">知道怎么做</font><a id="more"></a></h2>
-<h2 id="已知蛋白质二级序列">已知蛋白质二级序列</h2>
-<ul>
-<li><p>登入<a href="https://www.rcsb.org/">PDB</a></p></li>
-<li><p>选择你的蛋白质序列ID</p></li>
-<li><p>选择 sequence</p></li>
-<li><p>点击 view sequence &amp; DSSP image // 这个没有了</p></li>
-<li><p><a href="https://swift.cmbi.umcn.nl/gv/dssp/">DSSP</a> 这个网站下有可以搜索已知序列 web sever</p></li>
-</ul>
-<h3 id="未知蛋白质的二级序列">未知蛋白质的二级序列</h3>
-<ul>
-<li><a href="http://bioinf.cs.ucl.ac.uk/psipred">PSIPRED</a></li>
-<li><a href="http://www.compbio.dundee.ac.uk/www-jpred/">Jpred3</a></li>
-<li><a href="http://www.predictprotein.org/">PREDICTPROTEIN</a></li>
-<li><a href="http://scratch.proteomics.ics.uci.edu/">SSpro</a></li>
-<li><a href="http://zhanglab.ccmb.med.umich.edu/PSSpred/">PSSpred</a></li>
-<li><a href="http://mobyle.pasteur.fr/cgi-bin/portal.py?#forms:predator">PREDATOR</a></li>
-</ul>
+    <title>有趣的小网站</title>
+    <url>/2020/10/19/%E6%9C%89%E8%B6%A3%E7%9A%84%E5%B0%8F%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<h1 id="git">git</h1>
 <ol type="1">
-<li>选择上面的任意一个网站<br>
-</li>
-<li>输入序列或上传序列文件</li>
-<li>等待得到对应的文件</li>
+<li><p><a href="https://book.git-scm.com/">git网址</a></p></li>
+<li><p>推荐这个简易版的<a href="https://www.bootcss.com/p/git-guide/">git_</a></p></li>
 </ol>
-<hr>
-<h1 id="蛋白质三级结构">蛋白质三级结构</h1>
-<ul>
-<li><p>获取数据还是得去<a href="https://www.rcsb.org/">PDB</a></p></li>
-<li><p><strong>输入关键词</strong>或者用<font color="red">高级检索输入序列找相似序列</font></p></li>
-<li><p>关于高级检索可以看看blast 检索</p></li>
-</ul>
-<p><img src="/2020/10/13/%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/image-20201013154144283.png"></p>
-<ul>
-<li>制作可视化蛋白质模型软件
-<ul>
-<li><a href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a> (重点是免费)</li>
-<li>Maestro<br>
-</li>
-<li><a href="https://pymol.org/2/">Pymol</a> (专业 土豪随意)</li>
-</ul></li>
-</ul>
-<hr>
-<h1 id="vmd使用记录">VMD使用记录</h1>
-<ul>
-<li>导入pdb文件.</li>
-<li>就会显示出蛋白质的三级结构</li>
-<li>Graphics -&gt; REpresentations 可以修改3D模型的样式</li>
-<li>Graphics -&gt;Colors 里可以修改颜色</li>
-<li>Graphics-&gt; Labels 修改标签样式</li>
-</ul>
+<h1 id="学语言交流的">学语言(交流的)</h1>
+<ol type="1">
+<li>小玩具叭 <a href="http://www.duolingo.cn/learn">多领国</a></li>
+</ol>
 ]]></content>
       <categories>
-        <category>生物信息学</category>
+        <category>随手记</category>
       </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
   </entry>
   <entry>
     <title>多序列比对</title>
@@ -353,5 +186,311 @@ s(i,j-1) +gap\\
       <categories>
         <category>生物信息学</category>
       </categories>
+  </entry>
+  <entry>
+    <title>蛋白质相关操作</title>
+    <url>/2020/10/13/%E8%9B%8B%E7%99%BD%E8%B4%A8%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<h1 id="蛋白质二级结构">蛋白质二级结构</h1>
+<h2 id="先看懂"><font color="YELLOW">先看懂</font>:　</h2>
+<p>​ <strong>结构对应图</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>T</th>
+<th style="text-align: center;">E</th>
+<th>G</th>
+<th style="text-align: center;">empty</th>
+<th style="text-align: center;">H</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>turn</td>
+<td style="text-align: center;">beta strand</td>
+<td>3/10- hellx</td>
+<td style="text-align: center;">ono secondary structure</td>
+<td style="text-align: center;">alpha hexllx</td>
+</tr>
+<tr class="even">
+<td>β转角</td>
+<td style="text-align: center;">β折片</td>
+<td>螺旋结构</td>
+<td style="text-align: center;">没有结构</td>
+<td style="text-align: center;">α螺旋</td>
+</tr>
+</tbody>
+</table>
+<h2 id="知道怎么做"><font color="blue">知道怎么做</font><a id="more"></a></h2>
+<h2 id="已知蛋白质二级序列">已知蛋白质二级序列</h2>
+<ul>
+<li><p>登入<a href="https://www.rcsb.org/">PDB</a></p></li>
+<li><p>选择你的蛋白质序列ID</p></li>
+<li><p>选择 sequence</p></li>
+<li><p>点击 view sequence &amp; DSSP image // 这个没有了</p></li>
+<li><p><a href="https://swift.cmbi.umcn.nl/gv/dssp/">DSSP</a> 这个网站下有可以搜索已知序列 web sever</p></li>
+</ul>
+<h3 id="未知蛋白质的二级序列">未知蛋白质的二级序列</h3>
+<ul>
+<li><a href="http://bioinf.cs.ucl.ac.uk/psipred">PSIPRED</a></li>
+<li><a href="http://www.compbio.dundee.ac.uk/www-jpred/">Jpred3</a></li>
+<li><a href="http://www.predictprotein.org/">PREDICTPROTEIN</a></li>
+<li><a href="http://scratch.proteomics.ics.uci.edu/">SSpro</a></li>
+<li><a href="http://zhanglab.ccmb.med.umich.edu/PSSpred/">PSSpred</a></li>
+<li><a href="http://mobyle.pasteur.fr/cgi-bin/portal.py?#forms:predator">PREDATOR</a></li>
+</ul>
+<ol type="1">
+<li>选择上面的任意一个网站<br>
+</li>
+<li>输入序列或上传序列文件</li>
+<li>等待得到对应的文件</li>
+</ol>
+<hr>
+<h1 id="蛋白质三级结构">蛋白质三级结构</h1>
+<ul>
+<li><p>获取数据还是得去<a href="https://www.rcsb.org/">PDB</a></p></li>
+<li><p><strong>输入关键词</strong>或者用<font color="red">高级检索输入序列找相似序列</font></p></li>
+<li><p>关于高级检索可以看看blast 检索</p></li>
+<li><p>制作可视化蛋白质模型软件</p>
+<ul>
+<li><a href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a> (重点是免费)</li>
+<li>Maestro<br>
+</li>
+<li><a href="https://pymol.org/2/">Pymol</a> (专业 土豪随意)</li>
+</ul></li>
+</ul>
+<hr>
+<h1 id="vmd使用记录">VMD使用记录</h1>
+<ul>
+<li>导入pdb文件.</li>
+<li>就会显示出蛋白质的三级结构</li>
+<li>Graphics -&gt; REpresentations 可以修改3D模型的样式</li>
+<li>Graphics -&gt;Colors 里可以修改颜色</li>
+<li>Graphics-&gt; Labels 修改标签样式</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生物信息学</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>计算方法预测三级结构</title>
+    <url>/2020/10/17/%E9%80%9A%E8%BF%87%E8%AE%A1%E7%AE%97%E5%BE%97%E5%87%BA%E8%9B%8B%E7%99%BD%E8%B4%A8%E4%B8%89%E7%BA%A7%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h1 id="what">WHAT ?</h1>
+<p>是利用电脑进行三级结构的预测 <a id="more"></a></p>
+<h1 id="why">WHY?</h1>
+<h2 id="先介绍下用实验预测的方法有d">先介绍下用实验预测的方法有d</h2>
+<ol type="1">
+<li>X射线衍射法</li>
+<li>冷冻电子显微镜技术</li>
+<li>核磁共振法</li>
+<li>等 (因为忘了)</li>
+</ol>
+<h2 id="为什么不用这些方法">为什么不用这些方法?</h2>
+<ol type="1">
+<li>贵</li>
+<li>技术含量高</li>
+<li>用时长</li>
+</ol>
+<h2 id="为什么用电脑预测">为什么用电脑预测?</h2>
+<ol type="1">
+<li>简单一台电脑就能搞定</li>
+<li>预测相识度比较高的结果较为准确</li>
+</ol>
+<h1 id="how">HOW?</h1>
+<h2 id="同源建模法">同源建模法</h2>
+<p>what: 相识的氨基酸序列对应的相应的蛋白质 用已知推未知</p>
+<p>why: 这样的方法简单啊 相识度在30%以上就可以用此方法, 当然相识度低的不适用</p>
+<p>how: 工作流程图</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017100749392.jpg"></p>
+<p>看起来比较复杂</p>
+<p>选个简单点: 用现成的<a href="https://swissmodel.expasy.org/">SWISS-MODEL</a>登入网站输入序列 输入非商业邮箱 ok</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101041900.jpg"></p>
+<p>注: 有些存在特殊情况. 序列高度一致的情况下,出现结构不相同</p>
+<h2 id="穿线法">穿线法</h2>
+<p>WHAT: 蛋白质的拓扑结构是确定的1393个, 2008到2015年没发生过变化, 用待测蛋白质序列过过这些已知的拓扑结构,能量较低的极可能是待测蛋白质的三级结构</p>
+<p>HOW: 待测蛋白质序列穿过这些已知的拓扑结构</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101041900.jpg"></p>
+<p>不用担心还是在线网站的<a href="https://zhanglab.ccmb.med.umich.edu/I-TASSER/">I-TASSER</a>注册-&gt;输入序列--&gt;点击run I-TASSER 只需等待即可</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101140258.jpg"></p>
+<h2 id="从头计算法">从头计算法</h2>
+<p>how: 蛋白质三维结构---&gt;蛋白质序列--&gt;最低自由能</p>
+<p>理论上来说: 稳定的蛋白质三维结构的自由能是最低的, 那么反过来 通/过序列去找最低的自由能的空间结构 就是待测序列的三维结构</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101304864.jpg"></p>
+<h2 id="综合法">综合法</h2>
+<p>what: 同源+ 穿线法+ 从头计算法</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101418572.jpg"></p>
+<p>这个就不多介绍了</p>
+<h2 id="总结">总结</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101508761.jpg"></p>
+<h1 id="模型质量评估">模型质量评估</h1>
+<p>通过 计算方法获得的模型,必须通过模型质量评估,以确定模型的准确性.</p>
+<p>需要三个平台测定类似才能确定模型的的可靠性.</p>
+<p>通常可以去<a href="https://servicesn.mbi.ucla.edu/SAVES/">SAVEAS</a>常用的有</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101612770.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101628626.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201017101655509.jpg"></p>
+<h1 id="结构比对">结构比对:</h1>
+<p>WHAT: 对蛋白质三维结构的相似性进行比较</p>
+<p>why?</p>
+<ol type="1">
+<li>可以用与探索蛋白质进化及其同源关系</li>
+<li>改进序列比对的精度</li>
+<li>改进蛋白质结构测序工具</li>
+<li>为蛋白质提供分类依据</li>
+<li>帮助了解蛋白质功能</li>
+</ol>
+<p>how?</p>
+<p>呐, 挺简单的看到这个网站没--&gt;<a href="http://superpose.wishartlab.com/">suuperpose</a> 点进去 然后把两条序列输入进去就OK了</p>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/du_1602901054.jpg"></p>
+]]></content>
+      <categories>
+        <category>生物信息学</category>
+      </categories>
+      <tags>
+        <tag>生物信息学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>名词语法</title>
+    <url>/2020/10/30/%E5%90%8D%E8%AF%8D/</url>
+    <content><![CDATA[<h1 id="名词的语法">名词的语法</h1>
+<h2 id="分类">分类<a id="more"></a></h2>
+<ul>
+<li>专有名词&amp; 普通名词</li>
+<li>可数名词&amp;不可数名词</li>
+<li>具体名词&amp;抽象名词</li>
+<li>复数形式出现的名词</li>
+</ul>
+<h2 id="单复数">单复数</h2>
+<h2 id="所有格">所有格</h2>
+<p>① of</p>
+<p>② 's</p>
+<p>③ 双重所有格</p>
+<h2 id="主谓一致">主谓一致</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/ducute/pic-use/img/image-20201030213139745.jpg"></p>
+<h3 id="集体名词做主语">集体名词做主语</h3>
+<ul>
+<li>表<font color="red">整体概念</font>,谓语动词用<font color="red">单数</font></li>
+<li>表个体概念, 谓语动词用复数.</li>
+</ul>
+<blockquote>
+<p>the whole family <strong>is</strong> active</p>
+<p>the family <strong>have</strong> met their various</p>
+</blockquote>
+<h3 id="单复数同形名词做主语">单复数同形名词做主语:</h3>
+<ul>
+<li>根据句意,判断谓语动词的<font color="red">单复数</font></li>
+</ul>
+<blockquote>
+<p>we need to find some other means of <strong>transportation</strong></p>
+<p>我们的找其他的交通工具了</p>
+</blockquote>
+<h3 id="专有名词作为整体对待谓语动词用单数">专有名词作为整体对待,谓语动词用<font color="red">单数</font></h3>
+<blockquote>
+<p>The United Nations <strong>has</strong> passed a resolution to lift sanctions against lraq.</p>
+<p>联合国通过了解除对伊朗裁决的决定</p>
+</blockquote>
+<h3 id="由-and-或-both-----and----连接两个单数名词做主语时代指复数的概念谓语动词用复数">由 and 或 both --- and--- 连接两个单数名词做主语时代指复数的概念,谓语动词用<font color="red">复数</font></h3>
+<blockquote>
+<p>She and her friends <strong>are</strong> at the fair</p>
+<p>她和她的朋友在会上</p>
+</blockquote>
+<h3 id="and-连接的两个词指同一个人同一件事.....两个名词用一个冠词谓语动词用单数">and 连接的两个词指同一个人、同一件事.....,两个名词用一个冠词，谓语动词用<font color="red">单数</font></h3>
+<blockquote>
+<p>the <u><em>teacher</em></u> <strong>and</strong> <em><u>writer</u></em> <strong>is</strong> her friend</p>
+<p>这位教师兼作家是她的朋友</p>
+</blockquote>
+<h3 id="and-连接单数前如有everyeach-no-many-a-修饰时-谓语动词用单数">and 连接单数前如有every，each ，no ，many a 修饰时 谓语动词用<font color="red">单数</font></h3>
+<blockquote>
+<p>No smoking or drinking is allowed. Every man and woman <strong>is</strong> required to check in.</p>
+<p>不许抽烟、饮酒。 按要求，每位男性及女性需要登记。</p>
+</blockquote>
+<h3 id="时间距离金钱价格等常作为整体看待时-谓语动词用单数形式">时间、距离、金钱，价格等常作为整体看待时， <strong>谓语动词用<font color="red">单数</font>形式</strong></h3>
+<blockquote>
+<p>Five dollars is a lot of money.</p>
+<p>五美元是很多钱。</p>
+<p>Fifteen miles is not a long way.</p>
+<p>十五英里不是很远。</p>
+</blockquote>
+<h3 id="就近原则"><font color="red"> 就近原则</font></h3>
+<ul>
+<li><h4 id="therehere-be-句型">there/here be 句型</h4></li>
+</ul>
+<blockquote>
+<p>there are <strong>many </strong> possible candidates.</p>
+<p>候选人有很多可能.</p>
+</blockquote>
+<ul>
+<li><h4 id="or-either---or-----两个其中一个-neither---nor----两个都不-not-only----butalso">or, either---or-----(<strong>两个其中一个</strong>), neither---nor----(<strong>两个都不</strong>), not only----but(also)</h4></li>
+</ul>
+<blockquote>
+<p>Either Grandpa or my sisters <font color="red">are</font> going to the park</p>
+<p>不是爷爷就是我妹妹要去公园</p>
+</blockquote>
+<h3 id="就远原则">就远原则</h3>
+<ul>
+<li>as well as // 也；和…一样；不但…而且</li>
+<li>together/along/combined with 和；连同/沿（顺）着；连同……一起；与……一道；除了……/化合，联合；连同</li>
+<li>rather than //而不是；宁可…也不愿</li>
+<li>except、besides、including //除……之外 //况且，再说；此外，以及//包括</li>
+<li>in addition to // 除了</li>
+<li>apart from //除…之外；且不说；并且</li>
+</ul>
+<blockquote>
+<p>the <strong><font color="blue">politician</font></strong>, along with the newsmen, <font color="red"><strong>is</strong></font> on the meeting</p>
+<p>一位警察和新闻记者们一起参加了会议</p>
+<p><font color="blue">Excitement</font>, as well as nervousness, <font color="red">is</font> the cause of her shaking.</p>
+<p>兴奋和紧张是她发抖的原因。</p>
+</blockquote>
+<h3 id="分数百分数-ｏｆ-名词短语谓语动词常于of-后面的名词保持一致">分数、百分数 +ｏｆ＋　名词短语,谓语动词常于of 后面的名词保持一致</h3>
+<ul>
+<li>some of /plenty of / a lot of / lots of /most of / the rest of / all of</li>
+<li>half of / part of</li>
+</ul>
+<blockquote>
+<p>All of the chicken <font color="red">is</font> gone</p>
+<p>所有的鸡都没了</p>
+</blockquote>
+<h3 id="在四则运算中-谓语动词多用单数">在四则运算中, 谓语动词多用<font color="red">单数</font></h3>
+<blockquote>
+<p>18 minus 12 is 6</p>
+</blockquote>
+<p><strong>a number of + 可数名词复数 谓语动词用复数</strong></p>
+<p><strong>the number of + 可数名词 谓语动词用单数</strong></p>
+<blockquote>
+<p>the number of students in the class <font color="blue"><strong>is</strong> </font>fifteen</p>
+<p>A number of students <font color="blue"><strong>were</strong> </font>late for class</p>
+</blockquote>
+<h3 id="each-one-no-one-someany-no-every-bodyone-或thing-作为语或者限定词谓语动词用单数">"each, one, no one , some(any , no ,every )+body(one 或thing)" 作为语或者限定词,谓语动词用<font color="red">单数</font></h3>
+<blockquote>
+<p>Each <font color="blue">gets</font> a trophy for playing</p>
+<p>Somebody will pay for this.</p>
+</blockquote>
+<h3 id="one-and-a-half-复数作主语动词用单数32-2">"one and a half + 复数"作主语,动词用<font color="red">单数</font>//3/2 &lt; 2</h3>
+<blockquote>
+<p>one and a half apples <font color="blue">is</font> left on the table</p>
+</blockquote>
+<h3 id="a-an-单数名词-or-two作主谓语用单数one-or-two-复数名词为主谓用复">"a / an + 单数名词 + or two"作主,谓语用<font color="red">单数</font>、“one or two + 复数名词”为主，谓用<font color="red">复</font></h3>
+<blockquote>
+<p>a student or two <font color="red">has</font> failed exam</p>
+<p>one or two suggestions <font color="blue">were</font> recommended.</p>
+</blockquote>
+<h3 id="many-a-.....-或者-more-than-one---为主谓语用单数">many a ..... 或者 more than one --为主，谓语用<font color="red">单数</font></h3>
+<blockquote>
+<p><font color="red">many a </font>man thinks life <font color="red">is</font> meaningless without purpose</p>
+<p>more than one student <font color="red">has</font> tried this</p>
+</blockquote>
+<h3 id="one-of-名词结构-谓语动词用单数">"one of + 名词结构" 谓语动词用单数</h3>
+<blockquote>
+<p><font color="red">one of </font>the student is our class <font color="red">is</font> from the UK</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>英语语法</category>
+      </categories>
+      <tags>
+        <tag>名词</tag>
+        <tag>英语</tag>
+      </tags>
   </entry>
 </search>
